@@ -119,5 +119,35 @@
     }
 }
 
-
-
+.rn_counterup {
+    &-two {
+        background: #f5f8fa;
+    }
+    &-item {
+        background: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        & p.description {
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &-icon {
+        & i {
+            color: var(--color-primary);
+            font-size: 60px;
+        }
+    }
+    &-number {
+        display: flex;
+        justify-content: center;
+    }
+    &-inner {
+        & span {
+            font-size: 44px;
+            font-weight: 700;
+            color: #181818;
+            line-height: 1;
+        }
+    }
+}
