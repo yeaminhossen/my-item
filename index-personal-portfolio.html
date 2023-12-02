@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
 
-    <title>Personal Portfolio || Doob Business and Consulting Bootstrap5 Template</title>
+    <title>Business || Doob Business and Consulting Bootstrap5 Template</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
     <!-- CSS ============================================ -->
@@ -22,8 +22,37 @@
 
 <body>
     <main class="page-wrapper">
+        <!-- Start Header Top Area  -->
+        <div class="header-top-news bg-image1">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="inner">
+                                <div class="content">
+                                    <span class="rn-badge">Limited Time Offer</span>
+                                    <span class="news-text">Intro price. Get Doob for Big Sale -95% off.</span>
+                                </div>
+                                <div class="right-button">
+                                    <a class="btn-read-more" href="https://themeforest.net/checkout/from_item/34133466?license=regular">
+                                        <span>Purchase Now <i class="feather-arrow-right"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="icon-close">
+                <button class="close-button bgsection-activation">
+                    <i class="feather-x"></i>
+                </button>
+            </div>
+        </div>
+        <!-- End Header Top Area  -->
+
         <!-- Start Header Area  -->
-        <header class="rn-header header-default header-transparent header-sticky">
+        <header class="rn-header header-default header-not-transparent header-sticky">
             <div class="container position-relative">
                 <div class="row align-items-center row--0">
                     <div class="col-lg-3 col-md-6 col-4">
@@ -172,7 +201,7 @@
 
                             <!-- Start Header Btn  -->
                             <div class="header-btn">
-                                <a class="btn-default btn-small round" target="_blank" href="https://themeforest.net/checkout/from_item/34133466?license=regular">BUY NOW</a>
+                                <a class="btn-default btn-small" target="_blank" href="https://themeforest.net/checkout/from_item/34133466?license=regular">BUY NOW</a>
                             </div>
                             <!-- End Header Btn  -->
 
@@ -354,6 +383,7 @@
 
             </div>
         </div>
+
         <!-- Start Theme Style  -->
         <div>
             <div class="rn-gradient-circle"></div>
@@ -364,13 +394,25 @@
 
 
         <!-- Start Slider Area  -->
-        <div class="slider-perosonal-portfolio height-750 slider-bg-image bg-image11" data-black-overlay="1">
+        <div class="slider-area slider-style-3 height-850">
             <div class="container">
                 <div class="row row--30 align-items-center">
-                    <div class="col-12">
-                        <div class="inner text-center">
-                            <h1 class="title">Hey! I'm <br> <span class="theme-gradient">Jonnin Arra</span></h1>
-                            <div class="button-group mt--30"><a class="btn-default round btn-border btn-large" href="personal-portfolio.html">Contact Me</a></div>
+                    <div class="order-2 order-lg-1 col-lg-7 mt_md--50 mt_sm--50 mt_lg--30">
+                        <div class="inner text-left">
+                            <h1 class="title theme-gradient">Trending <br>Business</h1>
+                            <p class="description">We help our clients succeed by creating brand identities, digital
+                                experiences, and print materials.</p>
+                            <div class="button-group mt--30 mt_sm--20">
+                                <a class="btn-default btn-medium btn-icon" target="_blank" href="#">Purchase
+                                    Now <i class="icon feather-arrow-right">
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 order-lg-2 col-lg-5">
+                        <div class="thumbnail">
+                            <img src="assets/images/about/about-2.png" alt="Banner Images">
                         </div>
                     </div>
                 </div>
@@ -378,240 +420,175 @@
         </div>
         <!-- End Slider Area  -->
 
-        <!-- Start About Area  -->
-        <div class="about-style-5 rn-section-gapBottom">
+        <!-- Start Seperator Area  -->
+        <div class="rbt-separator-mid">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="row row--0 about-wrapper align-items-center theme-shape">
-                            <div class="col-lg-6">
-                                <div class="thumbnail"><img src="assets/images/about/about-5.png" alt="About Images">
+                <hr class="rbt-separator m-0">
+            </div>
+        </div>
+        <!-- End Seperator Area  -->
+
+        <!-- Start Tab Area  -->
+        <div class="rn-tab-area rn-section-gap">
+            <div class="container">
+                <div class="row mb--40">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                            <h4 class="subtitle "><span class="theme-gradient">Companies About.</span></h4>
+                            <h2 class="title w-600 mb--20">What About Our Companies.</h2>
+                            <p class="description b1">We help our clients succeed by creating brand identities, <br>
+                                digital experiences, and print materials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row row--30 align-items-center">
+                    <div class="col-lg-5" data-sal="slide-right" data-sal-duration="700">
+                        <img class="radius-small" src="assets/images/tab/tabs-01.jpg" alt="Corporate Template">
+                    </div>
+                    <div class="col-lg-7 mt_md--40 mt_sm--40 order-2 order-lg-1" data-sal="slide-left" data-sal-duration="700">
+                        <div class="rn-default-tab">
+                            <ul class="nav nav-tabs tab-button" id="myTab" role="tablist">
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Strategy</button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Reporting</button>
+                                </li>
+                                <li class="nav-item tabs__tab " role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Development</button>
+                                </li>
+                            </ul>
+                            <div class="rn-tab-content tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ipsa,
+                                        deleniti soluta minima minus asperiores doloribus enim vitae obcaecati
+                                        fuga assumenda laudantium nemo odio provident nulla exercitationem
+                                        tempore corrupti! Nemo.</p>
+
+                                    <p>Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim
+                                        vitae obcaecati fuga assumenda laudantium nemo odio provident nulla
+                                        exercitationem tempore corrupti! Nemo.</p>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 mt_md--30 mt_sm--30">
-                                <div class="content">
-                                    <div class="inner">
-                                        <h4 class="title">I'm Web Dedeloper</h4>
-                                        <p>Web designer and developer working for envato.com in Paris, France.</p>
-                                        <ul class="contact-address">
-                                            <li>
-                                                <i class="feather-file"></i> Web designer &amp; developer
-                                            </li>
-                                            <li><i class="feather-phone"></i> +01916395965</li>
-                                            <li>
-                                                <i class="feather-map-pin"></i> Dhaka, Bangladesh
-                                            </li>
-                                        </ul>
-                                        <div class="download-button mt--20"><a class="btn-read-more" href="#"><span>Download My CV</span></a></div>
-                                    </div>
+
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <p>Ipsum lorem dolor sit amet consectetur, adipisicing elit. Quibusdam ipsa,
+                                        deleniti soluta minima minus asperiores doloribus enim vitae obcaecati
+                                        fuga assumenda laudantium nemo odio provident nulla exercitationem
+                                        tempore corrupti! Nemo.</p>
+
+                                    <p>Ipsa Quibusdam, deleniti soluta minima minus asperiores doloribus enim
+                                        vitae obcaecati fuga assumenda laudantium nemo odio provident nulla
+                                        exercitationem tempore corrupti! Nemo.</p>
+                                </div>
+
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p>Exercitationem Ipsum lorem dolor sit amet consectetur, adipisicing elit.
+                                        Quibusdam ipsa, deleniti soluta minima minus asperiores doloribus enim
+                                        vitae obcaecati fuga assumenda laudantium nemo odio provident nulla
+                                        tempore corrupti! Nemo.</p>
+
+                                    <p>Ipsa Quibusdam, deleniti soluta minima minus asperiores doloribus enim
+                                        vitae obcaecati fuga assumenda laudantium nemo odio provident nulla
+                                        exercitationem tempore corrupti! Nemo.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- End About Area  -->
+        <!-- End Tab Area  -->
 
-        <!-- Start Brand Style-4  -->
-        <div class="rn-brand-area pb--90 mt_dec--30">
+        <!-- Start Seperator Area  -->
+        <div class="rbt-separator-mid">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <ul class="brand-list brand-style-2 variation-2">
-                            <li><a href="#"><img src="assets/images/brand/brand-01.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-02.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-03.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-04.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-05.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-06.png" alt="Brand Image"></a></li>
-                            <li><a href="#"><img src="assets/images/brand/brand-07.png" alt="Brand Image"></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <hr class="rbt-separator m-0">
             </div>
         </div>
-        <!-- End Brand Style-4  -->
+        <!-- End Seperator Area  -->
 
-
-        <!-- Start Portfolio Area  -->
-        <div class="rn-portfolio-area rn-section-gapBottom">
+        <!-- Start Time Line Area  -->
+        <div class="rn-timeline-area rn-section-gap">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">Project</span></h4>
-                            <h2 class="title w-600 mb--20">Check My Recent Works!</h2>
-                            <p class="description b1">We provide company and finance service for <br> startups and
-                                company business.</p>
+                            <h4 class="subtitle "><span class="theme-gradient">Timeline</span></h4>
+                            <h2 class="title w-600 mb--20">Working Process.</h2>
+                            <p class="description b1">We help our clients succeed by creating brand identities, <br>
+                                digital experiences, and print materials.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="rn-portfolio-filter filter-button-default messonry-button text-center mb--30">
-                            <button data-filter="*" class="is-checked"><span class="filter-text">All</span></button>
-                            <button data-filter=".cat--1"><span class="filter-text">design</span></button>
-                            <button data-filter=".cat--2"><span class="filter-text">art</span></button>
-                            <button data-filter=".cat--3"><span class="filter-text">development</span></button>
-                        </div>
-
-                        <div class="portfolio-items grid-metro3 mesonry-list">
-                            <div class="resizer"></div>
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--1">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-01.jpg" alt="Portfolio-01">
-                                                </a>
+                    <div class="col-lg-10 offset-lg-1 mt--50">
+                        <div class="timeline-style-two bg-color-blackest">
+                            <div class="row row--0">
+                                <div class="col-lg-3 col-md-3 rn-timeline-single dark-line">
+                                    <div class="rn-timeline">
+                                        <h6 class="title" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Knowledge</h6>
+                                        <div class="progress-line">
+                                            <div class="line-inner"></div>
+                                        </div>
+                                        <div class="progress-dot">
+                                            <div class="dot-level">
+                                                <div class="dot-inner"></div>
                                             </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
                                         </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">App Development</a>
-                                            </h5>
-                                            <span class="subtitle b2">development</span>
+                                        <p class="description" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Present all available features in Essentials.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 rn-timeline-single dark-line">
+                                    <div class="rn-timeline">
+                                        <h6 class="title" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Working</h6>
+                                        <div class="progress-line">
+                                            <div class="line-inner"></div>
                                         </div>
+                                        <div class="progress-dot">
+                                            <div class="dot-level">
+                                                <div class="dot-inner"></div>
+                                            </div>
+                                        </div>
+                                        <p class="description" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">All Feature available features in Essentials.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 rn-timeline-single dark-line">
+                                    <div class="rn-timeline">
+                                        <h6 class="title" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Solution</h6>
+                                        <div class="progress-line">
+                                            <div class="line-inner"></div>
+                                        </div>
+                                        <div class="progress-dot">
+                                            <div class="dot-level">
+                                                <div class="dot-inner"></div>
+                                            </div>
+                                        </div>
+                                        <p class="description" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Popular Feature available features in Essentials.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 rn-timeline-single dark-line">
+                                    <div class="rn-timeline">
+                                        <h6 class="title" data-sal="slide-up" data-sal-duration="400" data-sal-delay="200">Process</h6>
+                                        <div class="progress-line">
+                                            <div class="line-inner"></div>
+                                        </div>
+                                        <div class="progress-dot">
+                                            <div class="dot-level">
+                                                <div class="dot-inner"></div>
+                                            </div>
+                                        </div>
+                                        <p class="description" data-sal="slide-up" data-sal-duration="400" data-sal-delay="300">Latest Feature available features in Essentials.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Start Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--2 cat--3">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-02.jpg" alt="Portfolio-01">
-                                                </a>
-                                            </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
-                                        </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">Business Development</a>
-                                            </h5>
-                                            <span class="subtitle b2">design</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--3 cat--1">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-03.jpg" alt="Portfolio-01">
-                                                </a>
-                                            </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
-                                        </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">Photoshop Design</a>
-                                            </h5>
-                                            <span class="subtitle b2">art</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--3 cat--2">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-04.jpg" alt="Portfolio-01">
-                                                </a>
-                                            </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
-                                        </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">Native Application</a>
-                                            </h5>
-                                            <span class="subtitle b2">development</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--2">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-05.jpg" alt="Portfolio-01">
-                                                </a>
-                                            </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
-                                        </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">React Development</a>
-                                            </h5>
-                                            <span class="subtitle b2">Application</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Portfolio  -->
-
-                            <!-- Start Single Portfolio  -->
-                            <div class="portfolio-3 cat--3 cat--2 cat--1">
-                                <div class="rn-card portfolio">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <div class="card-image">
-                                                <a href="portfolio-details.html">
-                                                    <img src="assets/images/portfolio/portfolio-06.jpg" alt="Portfolio-01">
-                                                </a>
-                                            </div>
-                                            <a class="rn-overlay" href="portfolio-details.html"></a>
-                                        </div>
-                                        <div class="content">
-                                            <h5 class="title mb--10">
-                                                <a href="portfolio-details.html">App Installment</a>
-                                            </h5>
-                                            <span class="subtitle b2">Photoshop</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Start Single Portfolio  -->
                         </div>
                     </div>
                 </div>
-                <!-- Start Load More Button  -->
-                <div class="row row--15">
-                    <div class="col-lg-12">
-                        <div class="rn-load-more text-center mt--60">
-                            <a href="portfolio.html" class="btn btn-default btn-large btn-icon round">
-                                <span>Load More <span class="icon feather-loader"></span></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Load More Button  -->
             </div>
         </div>
-        <!-- End Portfolio Area  -->
+        <!-- End Time Line Area  -->
 
         <!-- Start Seperator Area  -->
         <div class="rbt-separator-mid">
@@ -624,56 +601,83 @@
         <!-- Start About Area  -->
         <div class="rn-about-area rn-section-gap">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-left" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">See my All Skill.</span></h4>
-                            <h2 class="title w-600 mb--20">My Working Skill</h2>
-                            <p class="description b1">We provide company and finance service for <br> startups and
-                                company business.</p>
+                <div class="row row--30">
+                    <div class="col-lg-5">
+                        <div class="thumbnail" data-sal="slide-right" data-sal-duration="700">
+                            <img class="w-100" src="assets/images/about/about-1.png" alt="About Images">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="rbt-progress-style-1 mt--10">
-
-                            <div class="single-progress">
-                                <h6 class="title">Web Development</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-
+                    <div class="col-lg-7 mt_md--40 mt_sm--40" data-sal="slide-left" data-sal-duration="700">
+                        <div class="content">
+                            <div class="section-title">
+                                <h4 class="subtitle "><span class="theme-gradient">WORKFLOW INTEGRATION
+                                </span></h4>
+                                <h2 class="title mb--40">Companies Platform.</h2>
+                            </div>
+                            <div class="rn-accordion-style  accordion">
+                                <div class="accordion" id="accordionExamplea">
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What is Doob ? How does it work?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExamplea">
+                                            <div class="accordion-body card-body">
+                                                You can run doob easily. First You'll need to have node and npm on your
+                                                machine. So Please open your command prompt then check. Goes To Your your command prompt.
+                                            </div>
+                                        </div>
                                     </div>
-                                    <span class="progress-number">90%</span>
+
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                How can I get the customer support?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExamplea">
+                                            <div class="accordion-body card-body">
+                                                After purchasing the product need you any support you can be share with
+                                                us with sending mail to rnit10@gmail.com.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                Can I get update regularly and For how long do I get updates?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExamplea">
+                                            <div class="accordion-body card-body">
+                                                Yes, We will get update the Trydo. And you can get it any time. Next
+                                                time we will comes with more feature. You can be get update for
+                                                unlimited times. Our dedicated team works for update.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item card">
+                                        <h2 class="accordion-header card-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                How can I run doob html template?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExamplea">
+                                            <div class="accordion-body card-body">
+                                                You can run doob easily. First You'll need to have node and npm on your
+                                                machine. So Please open your command prompt then check your node -v and
+                                                npm -v Version. Goes To Your your command prompt: then First: npm
+                                                install At Last: npm run start. By the following way you can be run your
+                                                project easily.
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-
-                            <div class="single-progress">
-                                <h6 class="title">Photoshop Design</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-
-                                    </div>
-                                    <span class="progress-number">75%</span>
-                                </div>
-                            </div>
-
-                            <div class="single-progress">
-                                <h6 class="title">App Development</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay=".3s" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                    <span class="progress-number">95%</span>
-                                </div>
-                            </div>
-
-                            <div class="single-progress">
-                                <h6 class="title">Application Development</h6>
-                                <div class="progress">
-                                    <div class="progress-bar wow fadeInLeft" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                    </div>
-                                    <span class="progress-number">45%</span>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -689,55 +693,70 @@
         </div>
         <!-- End Seperator Area  -->
 
-        <!-- Start Testimonial  Area  -->
-        <div class="rn-testimonial-area rn-section-gap">
+        <!-- Start Pricing Style-3  -->
+        <div class="rn-pricing-area rn-section-gap">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 mb--10">
-                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                            <h4 class="subtitle "><span class="theme-gradient">Client Feedback</span></h4>
-                            <h2 class="title w-600 mb--20">Awesome Clients Feedback.</h2>
-                            <p class="description b1">We provide company and finance service for <br> startups and
-                                company business.</p>
+                <div class="row mb--40 mb_sm--0">
+                    <div class="col-lg-12">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="100">
+                            <h4 class="subtitle "><span class="theme-gradient">Our Pricing Plan</span></h4>
+                            <h2 class="title w-600 mb--20">Business Pricing Plan.</h2>
+                            <p class="description b1">We help our clients succeed by creating brand identities, <br>
+                                digital experiences, and print materials.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row row--15">
-                    <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700">
-                        <div class="rn-box-card card-style-default testimonial-style-one">
-                            <div class="inner">
-                                <div class="thumbnail"><img src="assets/images/testimonial/testimonial-01.jpg" alt="Corporate React Template"></div>
-                                <div class="content">
-                                    <p class="description">“Libero vel lorem dui lupus est aliquet luctus
-                                        purus justo eget libero sed lorem.„</p>
-                                    <h2 class="title">Sr Janen Sara</h2>
-                                    <h6 class="subtitle theme-gradient">Sr Product Designer</h6>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2" data-sal="slide-up" data-sal-duration="700">
+                        <div class="row row--0">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="rn-pricing style-2">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-header">
+                                            <h4 class="title">Basic</h4>
+                                            <div class="pricing">
+                                                <div class="price-wrapper"><span class="currency">$</span><span
+                                                        class="price">29</span></div><span class="subtitle">USD Per
+                                                    Month</span>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <ul class="list-style--1">
+                                                <li><i class="feather-check"></i> 5 PPC Campaigns</li>
+                                                <li><i class="feather-check"></i> Digital Marketing</li>
+                                                <li><i class="feather-check"></i> Marketing Agency</li>
+                                                <li><i class="feather-check"></i> Seo Friendly</li>
+                                                <li><i class="feather-check"></i> UI/UX designs</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pricing-footer"><a class="btn-default btn-border" href="#">Purchase
+                                                Now</a></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
-                        <div class="rn-box-card card-style-default testimonial-style-one">
-                            <div class="inner">
-                                <div class="thumbnail"><img src="assets/images/testimonial/testimonial-02.jpg" alt="Corporate React Template"></div>
-                                <div class="content">
-                                    <p class="description">“Proin libero vel lorem dui lupus est aliquet luctus
-                                        purus justo eget libero sed lorem.„</p>
-                                    <h2 class="title">Afsana Nila</h2>
-                                    <h6 class="subtitle theme-gradient">App Developer</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">
-                        <div class="rn-box-card card-style-default testimonial-style-one">
-                            <div class="inner">
-                                <div class="thumbnail"><img src="assets/images/testimonial/testimonial-03.jpg" alt="Corporate React Template"></div>
-                                <div class="content">
-                                    <p class="description">“Vel lorem Proin libero dui lupus est aliquet luctus
-                                        purus justo eget libero sed lorem.„</p>
-                                    <h2 class="title">Afanan Sifa</h2>
-                                    <h6 class="subtitle theme-gradient">Accounts Manager</h6>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="rn-pricing style-2 active">
+                                    <div class="pricing-table-inner">
+                                        <div class="pricing-header">
+                                            <h4 class="title">Standard</h4>
+                                            <div class="pricing">
+                                                <div class="price-wrapper"><span class="currency">$</span><span
+                                                        class="price">50</span></div><span class="subtitle">USD Per
+                                                    Month</span>
+                                            </div>
+                                        </div>
+                                        <div class="pricing-body">
+                                            <ul class="list-style--1">
+                                                <li><i class="feather-check"></i> 5 PPC Campaigns</li>
+                                                <li><i class="feather-check"></i> Keep 100% Royalties</li>
+                                                <li><i class="feather-check"></i> App Development</li>
+                                                <li><i class="feather-check"></i> Seo Friendly</li>
+                                                <li><i class="feather-check"></i> UI/UX designs</li>
+                                            </ul>
+                                        </div>
+                                        <div class="pricing-footer"><a class="btn-default" href="#">Purchase
+                                                Now</a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -745,7 +764,7 @@
                 </div>
             </div>
         </div>
-        <!-- End Testimonial  Area  -->
+        <!-- End Pricing Style-3 -->
 
         <!-- Start Seperator Area  -->
         <div class="rbt-separator-mid">
@@ -760,9 +779,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="700" data-sal-delay="100">
+                        <div class="section-title text-center" data-sal="slide-up" data-sal-duration="400" data-sal-delay="100">
                             <h4 class="subtitle "><span class="theme-gradient">Latests News</span></h4>
-                            <h2 class="title w-600 mb--20">Read from the Blog.</h2>
+                            <h2 class="title w-600 mb--20">Our Latest News.</h2>
                             <p class="description b1">We provide company and finance service for <br> startups and
                                 company business.</p>
                         </div>
@@ -796,7 +815,7 @@
                                         <li class="separator">/</li>
                                         <li>30 Nov 2021</li>
                                     </ul>
-                                    <h4 class="title"><a href="/blog-details/2">Should Fixing Corporate Take 100
+                                    <h4 class="title"><a href="blog-details.html">Should Fixing Corporate Take 100
                                             Steps.</a></h4>
                                 </div>
                             </div>
@@ -806,14 +825,16 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt--30" data-sal="slide-up" data-sal-duration="700" data-sal-delay="200">
                         <div class="rn-card box-card-style-default">
                             <div class="inner">
-                                <div class="thumbnail"><a class="image" href="blog-details.html"><img src="assets/images/blog/blog-03.jpg" alt="Blog Image"></a></div>
+                                <div class="thumbnail">
+                                    <a class="image" href="blog-details.html"><img src="assets/images/blog/blog-03.jpg" alt="Blog Image"></a>
+                                </div>
                                 <div class="content">
                                     <ul class="rn-meta-list">
                                         <li><a href="#">John Dou</a></li>
                                         <li class="separator">/</li>
                                         <li>12 Oct 2021</li>
                                     </ul>
-                                    <h4 class="title"><a href="blog-details.html">The Next 100 Things To Immediately Do
+                                    <h4 class="title"><a href="blog-details.html">The Next 100 Things To Immed Iately Do
                                             About.</a></h4>
                                 </div>
                             </div>
@@ -824,153 +845,65 @@
         </div>
         <!-- End Blog Area  -->
 
-
-        <!-- Start Footer Area  -->
-        <footer class="rn-footer footer-style-default variation-two">
-            <div class="rn-callto-action clltoaction-style-default style-7">
+        <div class="footer-style-3">
+            <div class="rn-callto-action rn-call-to-action style-8 content-wrapper">
                 <div class="container">
-                    <div class="row row--0 align-items-center content-wrapper">
-                        <div class="col-lg-8 col-md-8">
+                    <div class="row row--0 align-items-center ">
+                        <div class="col-lg-12">
                             <div class="inner">
-                                <div class="content text-left">
-                                    <div class="logo">
-                                        <a href="index.html">
-                                            <img class="logo-light" src="assets/images/logo/logo.png" alt="Corporate Logo">
-                                            <img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="Corporate Logo">
-                                        </a>
-                                    </div>
-                                    <p class="subtitle" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">If you want to create a corporate template you can purshace now
-                                        our doob
-                                        template.</p>
+                                <div class="content text-center">
+                                    <h2 class="title">Ready to start creating a <br /> standard website?</h2>
+                                    <h6 class="subtitle">Finest choice for your home &amp; office</h6>
+                                    <div class="call-to-btn text-center mt--30"><a class="btn-default btn-icon" target="_blank" href="https://themeforest.net/checkout/from_item/34133466?license=regular">Purchase Doob <i class="icon feather-arrow-right"> </i></a></div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4" data-sal="slide-up" data-sal-duration="400" data-sal-delay="150">
-                            <div class="call-to-btn text-left mt_sm--20 text-lg-right">
-                                <a class="btn-default" href="https://themeforest.net/checkout/from_item/34133466?license=regular">Purchase Doob
-                                    <i class="feather-arrow-right"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-top">
+            <div class="copyright-area copyright-style-one variation-two">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Services</h4>
-                                <div class="inner">
-                                    <ul class="footer-link link-hover">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                    </ul>
-                                </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-7 col-sm-12 col-12">
+                            <div class="copyright-left">
+                                <ul class="ft-menu link-hover">
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="#">Terms And Condition</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <div class="widget-menu-top">
-                                    <h4 class="title">Solutions</h4>
-                                    <div class="inner">
-                                        <ul class="footer-link link-hover">
-                                            <li><a href="brand.html">Brand</a></li>
-                                            <li><a href="call-to-action.html">call To Action</a></li>
-                                            <li><a href="counter.html">Counter</a></li>
-                                            <li><a href="service.html">Service</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="col-lg-4 col-md-5 mt_sm--20">
+                            <div class="copyright-center text-center">
+                                <ul class="social-icon social-default color-lessdark justify-content-center">
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="200"><a href="https://www.facebook.com/">
+                                            <i class="feather-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="300"><a href="https://www.twitter.com">
+                                            <i class="feather-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="400"><a href="https://www.instagram.com/">
+                                            <i class="feather-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li data-sal="slide-up" data-sal-duration="400" data-sal-delay="500"><a href="https://www.linkdin.com/">
+                                            <i class="feather-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Company</h4>
-                                <div class="inner">
-                                    <ul class="footer-link link-hover">
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="tab.html">Tab Styles</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="social-share.html">Social</a></li>
-                                    </ul>
-                                </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt_md--20 mt_sm--20">
+                            <div class="copyright-right text-center text-lg-end">
+                                <p class="copyright-text">© Copyright All rights reserved <a target="_blank" href="https://themeforest.net/user/rn-themes/portfolio">Rainbow-Themes</a></p>
                             </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Resources</h4>
-                                <div class="inner">
-                                    <ul class="footer-link link-hover">
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="testimonial.html">Testimonial</a></li>
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="timeline.html">Timeline</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                            <div class="rn-footer-widget">
-                                <h4 class="title">Stay With Us.</h4>
-                                <div class="inner">
-                                    <h6 class="subtitle">2000+ Our clients are subscribe Around the World</h6>
-                                    <ul class="social-icon social-default justify-content-start">
-                                        <li><a href="https://www.facebook.com/">
-                                                <i class="feather-facebook"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.twitter.com">
-                                                <i class="feather-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/">
-                                                <i class="feather-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li><a href="https://www.linkdin.com/">
-                                                <i class="feather-linkedin"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- End Footer Area  -->
-        <!-- Start Copy Right Area  -->
-        <div class="copyright-area copyright-style-one">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-8 col-sm-12 col-12">
-                        <div class="copyright-left">
-                            <ul class="ft-menu link-hover">
-                                <li>
-                                    <a href="privacy-policy.html">Privacy Policy</a>
-                                </li>
-                                <li>
-                                    <a href="#">Terms And Condition</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-4 col-sm-12 col-12">
-                        <div class="copyright-right text-center text-lg-end">
-                            <p class="copyright-text">© Doob 2022</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Copy Right Area  -->
     </main>
 
     <!-- All Scripts  -->
