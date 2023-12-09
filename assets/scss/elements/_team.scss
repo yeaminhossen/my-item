@@ -4,11 +4,11 @@
 .rn-box-card,
 .team-style-default {
     margin-top: 75px;
+
     .inner {
-        background: linear-gradient(180deg,var(--color-lessdark) 20%,rgba(19,19,19,.4));
+        background: linear-gradient(180deg, var(--color-lessdark) 20%, rgba(19, 19, 19, .4));
         -webkit-backdrop-filter: blur(4px) opacity(.95);
         backdrop-filter: blur(4px) opacity(.95);
-        border-radius: var(--radius-big);
 
         .thumbnail {
             max-width: 150px;
@@ -22,9 +22,7 @@
             min-width: 150px;
             min-height: 150px;
             overflow: hidden;
-            img {
-                border-radius: 100%;
-            }
+            border: 5px solid #004D6E;
         }
 
         .content {
@@ -39,12 +37,14 @@
                 font-weight: 700;
                 margin-bottom: 6px;
             }
+
             .subtitle {
                 font-size: 20px;
                 line-height: 1.4;
                 margin-bottom: 15px;
                 display: inline-block;
             }
+
             .team-form {
                 display: block;
                 font-size: 14px;
@@ -57,11 +57,13 @@
                     max-height: 18px;
                 }
             }
+
             .description {
                 margin-bottom: 0;
                 padding: 0 5%;
             }
         }
+
         .rating {
             img {
                 margin-left: -3px;
@@ -69,12 +71,14 @@
                 max-height: 35px;
             }
         }
+
         .author-envato-image {
             img {
                 max-height: 25px;
                 margin-top: 20px;
             }
         }
+
         .social-icon {
             li {
                 a {
@@ -84,18 +88,12 @@
         }
     }
 
-    &.border-gradient {
-        .thumbnail {
-            background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 98%/200% 100%;
-            padding: 5px;
-            border: 0 none;
-        }
-    }
-
     &.style-two {
         margin-top: 30px;
+
         .inner {
             padding-top: 35px;
+
             .thumbnail {
                 top: 0;
                 position: static;
@@ -104,7 +102,9 @@
                 min-width: 150px;
                 min-height: 150px;
                 margin: 0 auto;
+                border: 5px solid #004D6E;
             }
+
             .content {
                 padding-top: 10px;
             }
@@ -118,20 +118,45 @@
 .team-style-two {
     .inner {
         .thumbnail {
+           
+            &::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s;
+            }
             img {
                 width: 100%;
-                border-radius: var(--radius);
             }
         }
+
         .content {
-            padding-top: 20px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+
             .title {
                 font-size: 28px;
                 line-height: 1.4;
                 font-weight: 500;
                 margin-bottom: 0;
+                display: inline-block;
+                margin-top: 4px;
+                opacity: 0;
+                transform: translateX(30px);
+                transition: transform 0.45s cubic-bezier(0.16, 0.32, 0.26, 0.92), opacity 0.45s ease-out;
+                transition-delay: 0s, 0s;
+                transition-delay: 0.15s;
 
             }
+
             .subtitle {
                 font-size: 18px;
                 line-height: 1.4;
@@ -140,15 +165,18 @@
                 margin-bottom: 0;
                 opacity: 0;
                 transform: translateX(30px);
-                transition: transform .45s cubic-bezier(.16,.32,.26,.92),opacity .45s ease-out;
+                transition: transform .45s cubic-bezier(.16, .32, .26, .92), opacity .45s ease-out;
                 transition-delay: .15s;
+                color: var(--color-white);
             }
+
             .team-form {
                 display: block;
                 font-size: 14px;
                 letter-spacing: 0.6px;
                 font-style: italic;
                 margin-top: 11px;
+
                 img {
                     padding-right: 10px;
                     max-height: 18px;
@@ -159,13 +187,26 @@
 
     &:hover {
         .inner {
+            .thumbnail {
+                &::before {
+                    opacity: .8;
+                    visibility: visible;
+                    height: 100%;
+                }
+            }
             .content {
-                
+
 
                 .subtitle {
                     opacity: 1;
                     transform: none;
+                    
                 }
+                .title {
+                    opacity: 1;
+                    transform: none;
+                }
+      
 
             }
         }
@@ -178,12 +219,14 @@
 .team-style-three {
     .inner {
         position: relative;
+
         .thumbnail {
             img {
                 width: 100%;
                 border-radius: var(--radius);
             }
         }
+
         .content {
             position: absolute;
             bottom: 0;
@@ -194,8 +237,10 @@
 
             .team-info {
                 padding: 20px;
-                background-color: rgba(58,58,58,0.85);
+                background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
                 border-radius: var(--radius-small);
+                transform: translateY(100%);
+                transition: all 0.3s;
             }
 
             .title {
@@ -204,11 +249,13 @@
                 color: var(--color-heading);
                 margin-bottom: 4px;
             }
+
             .subtitle {
                 font-size: 16px;
                 line-height: 25px;
                 margin-bottom: 4px;
             }
+
             .team-form {
                 display: block;
                 font-style: italic;
@@ -223,9 +270,10 @@
         .inner {
             .content {
                 opacity: 1;
+                .team-info {
+                    transform: translateY(0%);
+                }
             }
         }
     }
 }
-
-

@@ -2242,6 +2242,10 @@ textarea:-ms-input-placeholder {
   }
 }
 
+.p-relative {
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ptb--120 {
     padding: 80px 0 !important;
@@ -10095,12 +10099,15 @@ div.btn-default.rounded-player.sm-size {
   width: 30px;
   height: 30px;
   line-height: 36px;
+  transition: 0.3s;
 }
 .social-default.icon-naked li a::after {
   display: none;
 }
 .social-default.icon-naked li a:hover {
   color: var(--color-primary) !important;
+  border: 1px solid;
+  line-height: 24px;
 }
 
 .rn-social-icon {
@@ -10535,7 +10542,6 @@ div.btn-default.rounded-player.sm-size {
   background: linear-gradient(180deg, var(--color-lessdark) 20%, rgba(19, 19, 19, 0.4));
   -webkit-backdrop-filter: blur(4px) opacity(0.95);
   backdrop-filter: blur(4px) opacity(0.95);
-  border-radius: var(--radius-big);
 }
 .rn-box-card .inner .thumbnail,
 .team-style-default .inner .thumbnail {
@@ -10550,10 +10556,7 @@ div.btn-default.rounded-player.sm-size {
   min-width: 150px;
   min-height: 150px;
   overflow: hidden;
-}
-.rn-box-card .inner .thumbnail img,
-.team-style-default .inner .thumbnail img {
-  border-radius: 100%;
+  border: 5px solid #004D6E;
 }
 .rn-box-card .inner .content,
 .team-style-default .inner .content {
@@ -10609,12 +10612,6 @@ div.btn-default.rounded-player.sm-size {
 .team-style-default .inner .social-icon li a {
   color: var(--color-body);
 }
-.rn-box-card.border-gradient .thumbnail,
-.team-style-default.border-gradient .thumbnail {
-  background: linear-gradient(95deg, var(--color-primary) 15%, var(--color-tertiary) 45%, var(--color-pink) 75%, var(--color-secondary) 100%) 98%/200% 100%;
-  padding: 5px;
-  border: 0 none;
-}
 .rn-box-card.style-two,
 .team-style-default.style-two {
   margin-top: 30px;
@@ -10632,6 +10629,7 @@ div.btn-default.rounded-player.sm-size {
   min-width: 150px;
   min-height: 150px;
   margin: 0 auto;
+  border: 5px solid #004D6E;
 }
 .rn-box-card.style-two .inner .content,
 .team-style-default.style-two .inner .content {
@@ -10641,18 +10639,39 @@ div.btn-default.rounded-player.sm-size {
 /*---------------------
     Team Style Two  
 -----------------------*/
+.team-style-two .inner .thumbnail::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
 .team-style-two .inner .thumbnail img {
   width: 100%;
-  border-radius: var(--radius);
 }
 .team-style-two .inner .content {
-  padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
 }
 .team-style-two .inner .content .title {
   font-size: 28px;
   line-height: 1.4;
   font-weight: 500;
   margin-bottom: 0;
+  display: inline-block;
+  margin-top: 4px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: transform 0.45s cubic-bezier(0.16, 0.32, 0.26, 0.92), opacity 0.45s ease-out;
+  transition-delay: 0s, 0s;
+  transition-delay: 0.15s;
 }
 .team-style-two .inner .content .subtitle {
   font-size: 18px;
@@ -10664,6 +10683,7 @@ div.btn-default.rounded-player.sm-size {
   transform: translateX(30px);
   transition: transform 0.45s cubic-bezier(0.16, 0.32, 0.26, 0.92), opacity 0.45s ease-out;
   transition-delay: 0.15s;
+  color: var(--color-white);
 }
 .team-style-two .inner .content .team-form {
   display: block;
@@ -10676,7 +10696,16 @@ div.btn-default.rounded-player.sm-size {
   padding-right: 10px;
   max-height: 18px;
 }
+.team-style-two:hover .inner .thumbnail::before {
+  opacity: 0.8;
+  visibility: visible;
+  height: 100%;
+}
 .team-style-two:hover .inner .content .subtitle {
+  opacity: 1;
+  transform: none;
+}
+.team-style-two:hover .inner .content .title {
   opacity: 1;
   transform: none;
 }
@@ -10701,8 +10730,10 @@ div.btn-default.rounded-player.sm-size {
 }
 .team-style-three .inner .content .team-info {
   padding: 20px;
-  background-color: rgba(58, 58, 58, 0.85);
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
   border-radius: var(--radius-small);
+  transform: translateY(100%);
+  transition: all 0.3s;
 }
 .team-style-three .inner .content .title {
   font-size: 17px;
@@ -10724,6 +10755,9 @@ div.btn-default.rounded-player.sm-size {
 }
 .team-style-three:hover .inner .content {
   opacity: 1;
+}
+.team-style-three:hover .inner .content .team-info {
+  transform: translateY(0%);
 }
 
 /*---------------------

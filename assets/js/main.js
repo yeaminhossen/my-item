@@ -151,6 +151,37 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>'
             });
+            $('.team-activation').not('.slick-initialized').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: {
+                    delay: 1000,
+                  },
+                dots: true,
+                loop: true,
+                arrows: true,
+                adaptiveHeight: true,
+                cssEase: 'linear',
+                prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
+                nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
+                responsive: [
+                    {
+                      breakpoint: 769,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 581,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                  ]
+            });
 
             $('.slider-activation').not('.slick-initialized').slick({
                 infinite: true,
