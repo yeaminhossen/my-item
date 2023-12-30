@@ -2,7 +2,7 @@
 
 .button-group {
     margin: -10px;
-
+    margin-bottom: 30px;
     a,
     button {
         margin: 10px;
@@ -20,6 +20,7 @@ div {
         transition: 0.4s;
         background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
         color: #fff;
+        padding: 10px 20px;
         &.btn-icon {
             .icon {
                 position: relative;
@@ -44,9 +45,10 @@ div {
         &.btn-small {
             height: 40px;
             line-height: 36px;
-            padding: 0 20px;
+            padding: 11px 20px;
             font-size: 14px;
             font-weight: 500;
+            border-radius: 30px;
         }
 
         &.btn-medium {
@@ -60,8 +62,14 @@ div {
             line-height: 56px;
             padding: 0 37px;
             font-size: 17px;
+            padding: 20px 40px;
+            border-radius: 0 30px 0 30px;
             @media #{$sm-layout} {
                 padding: 0 25px;
+            }
+            &:hover {
+                padding: 20px 40px;
+                border-radius: 30px 0 30px 0;
             }
         }
 
@@ -70,6 +78,7 @@ div {
             line-height: 90px;
             padding: 0 70px;
             font-size: 20px;
+            padding: 22px 51px;
             @media #{$sm-layout} {
                 padding: 0 44px;
             }

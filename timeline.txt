@@ -3,6 +3,7 @@ galley page start 5 ta galley section thakbay done.........
 brand page start 5 ta brand section thakbay done ..........
 Social page start 5 ta section thakbay done................
 team page start 5 ta section thakbay 
+SERVICE page start 5 ta section thakbay 
 
 
 
@@ -16,3 +17,6 @@ https://demo.tagdiv.com/newspaper_coaching_pro/about/
 https://avada.website/resume/
 https://themeforest.net/item/the-ark/19016121
 https://preview.themeforest.net/item/ohio-creative-wordpress-theme/full_screen_preview/25193838?_ga=2.205762259.1143789341.1700140338-1970580932.1691258970
+https://preview.themeforest.net/item/onovo-creative-portfolio-agency-wordpress-theme/full_screen_preview/45878490
+
+https://preview.themeforest.net/item/oconnor-lawyers-attorneys-and-law-firm-wordpress-theme/full_screen_preview/22089634

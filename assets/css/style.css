@@ -8954,9 +8954,28 @@ xclip
   padding: 7px 14px;
   box-shadow: var(--shadow-lighter);
   background: transparent !important;
+  position: relative;
 }
 .section-title .subtitle.radius-rounded {
   border-radius: 100px;
+}
+.section-title .subtitle::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -46px;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+}
+.section-title .subtitle::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  right: -46px;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
 }
 @media only screen and (max-width: 767px) {
   .section-title .description br {
@@ -8982,6 +9001,7 @@ xclip
 /* Button Styles  */
 .button-group {
   margin: -10px;
+  margin-bottom: 30px;
 }
 .button-group a,
 .button-group button {
@@ -8999,6 +9019,7 @@ div.btn-default {
   transition: 0.4s;
   background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
   color: #fff;
+  padding: 10px 20px;
 }
 a.btn-default.btn-icon .icon,
 button.btn-default.btn-icon .icon,
@@ -9027,9 +9048,10 @@ button.btn-default.btn-small,
 div.btn-default.btn-small {
   height: 40px;
   line-height: 36px;
-  padding: 0 20px;
+  padding: 11px 20px;
   font-size: 14px;
   font-weight: 500;
+  border-radius: 30px;
 }
 a.btn-default.btn-medium,
 button.btn-default.btn-medium,
@@ -9045,6 +9067,8 @@ div.btn-default.btn-large {
   line-height: 56px;
   padding: 0 37px;
   font-size: 17px;
+  padding: 20px 40px;
+  border-radius: 0 30px 0 30px;
 }
 @media only screen and (max-width: 767px) {
   a.btn-default.btn-large,
@@ -9053,6 +9077,12 @@ div.btn-default.btn-large {
     padding: 0 25px;
   }
 }
+a.btn-default.btn-large:hover,
+button.btn-default.btn-large:hover,
+div.btn-default.btn-large:hover {
+  padding: 20px 40px;
+  border-radius: 30px 0 30px 0;
+}
 a.btn-default.btn-extra-large,
 button.btn-default.btn-extra-large,
 div.btn-default.btn-extra-large {
@@ -9060,6 +9090,7 @@ div.btn-default.btn-extra-large {
   line-height: 90px;
   padding: 0 70px;
   font-size: 20px;
+  padding: 22px 51px;
 }
 @media only screen and (max-width: 767px) {
   a.btn-default.btn-extra-large,
@@ -9266,6 +9297,45 @@ div.btn-default.rounded-player.sm-size {
 /*--------------------
     Service Styles  
 ----------------------*/
+.service .background-color::before {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(90deg, #004D6E 100%);
+  content: "";
+  text-align: center;
+  line-height: 80px;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: 50px;
+}
+.service-before::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.service:hover.service-before::before {
+  opacity: 0.8;
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.service:hover .content {
+  position: relative;
+  z-index: 3;
+}
+.service:hover .content p {
+  color: var(--color-heading);
+}
 .service.service__style--1 {
   padding: 50px 35px;
   padding-bottom: 55px;
@@ -9289,10 +9359,9 @@ div.btn-default.rounded-player.sm-size {
   }
 }
 .service.service__style--1 .icon {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: 400;
   margin-bottom: 23px;
-  color: var(--color-primary);
   text-align: center;
   border-radius: 100%;
   display: flex;
@@ -9305,7 +9374,7 @@ div.btn-default.rounded-player.sm-size {
 }
 .service.service__style--1 .icon i {
   stroke-width: 1 !important;
-  font-size: 45px;
+  font-size: 40px;
 }
 .service.service__style--1 .icon svg {
   stroke-width: 2px !important;
@@ -9328,9 +9397,6 @@ div.btn-default.rounded-player.sm-size {
 }
 .service.service__style--1:hover {
   transform: translateY(-5px);
-}
-.service.service__style--1.rbt-border-none {
-  border: none;
 }
 .service.service__style--1.rbt-border {
   border: 1px solid var(--color-border);
@@ -9558,9 +9624,6 @@ div.btn-default.rounded-player.sm-size {
   margin-bottom: 0;
 }
 
-.service-wrapper > [class*=col]:nth-child(2) .service.service__style--1 .icon {
-  color: var(--color-secondary);
-}
 .service-wrapper > [class*=col]:nth-child(3) .service.service__style--1 .icon {
   color: var(--color-tertiary);
 }
@@ -10763,6 +10826,32 @@ div.btn-default.rounded-player.sm-size {
 /*---------------------
     Portfolio Styles  
 -----------------------*/
+.rn-portfolio-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(64px);
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.rn-portfolio-content::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+  border-radius: 0 10px 0 0;
+  -webkit-transform: translate3d(0, 20%, 0);
+  -moz-transform: translate3d(0, 20%, 0);
+  transform: translate3d(0, 60%, 0);
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  opacity: 0;
+}
 .rn-portfolio-area {
   position: relative;
   overflow: hidden;
@@ -10770,6 +10859,24 @@ div.btn-default.rounded-player.sm-size {
 
 .rn-card {
   overflow: hidden;
+}
+.rn-card:hover .rn-portfolio-content::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  transition: 0.5s;
+}
+.rn-card:hover .rn-portfolio-content {
+  transform: translateY(1px);
+  transition-duration: 400ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 .rn-card .inner .thumbnail {
   position: relative;
@@ -10789,6 +10896,10 @@ div.btn-default.rounded-player.sm-size {
 }
 .rn-card .inner .content .subtitle {
   text-transform: capitalize;
+  line-height: 0;
+  position: relative;
+  z-index: 2;
+  color: var(--color-white);
 }
 .rn-card:hover {
   transform: translateY(-4px);
@@ -13546,8 +13657,10 @@ iframe {
   line-height: 1.5;
   transition: all 0.5s;
   margin-bottom: 0;
-  margin-top: 15px;
   flex-basis: 100%;
+  z-index: 2;
+  position: relative;
+  color: var(--color-white);
 }
 .rn-card.card-list-view {
   height: 100%;

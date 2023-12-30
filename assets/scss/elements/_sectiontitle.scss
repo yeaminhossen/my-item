@@ -10,8 +10,27 @@
         padding: 7px 14px;
         box-shadow: var(--shadow-lighter);
         background: transparent !important;
+        position: relative;
         &.radius-rounded {
             border-radius: 100px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: -46px;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            right: -46px;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #004D6E 0%, #00ACCC 100%);
         }
     }
     .title {
