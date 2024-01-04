@@ -1,5 +1,9 @@
 
 .rn-pricing {
+    &-item {
+        border: 2px solid var(--color-border);
+        padding: 40px;
+    }
     margin-top: 40px;
     .pricing-table-inner {
         padding: 40px;

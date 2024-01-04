@@ -12045,6 +12045,7 @@ Timeline Area
   flex-wrap: wrap;
   cursor: pointer;
   border-bottom: none;
+  justify-content: center;
 }
 .rn-default-tab .tab-button .tabs__tab {
   margin: 0;
@@ -12125,6 +12126,10 @@ Timeline Area
 
 .rn-pricing {
   margin-top: 40px;
+}
+.rn-pricing-item {
+  border: 2px solid var(--color-border);
+  padding: 40px;
 }
 .rn-pricing .pricing-table-inner {
   padding: 40px;
