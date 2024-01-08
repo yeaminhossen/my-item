@@ -413,7 +413,7 @@
             font-family: var(--font-primary);
             margin-bottom: 25px;
             display: block;
-            color: var(--color-white);
+            color: var(--color-dark);
             &.display-one {
                 @media #{$sm-layout} {
                     font-size: 40px;

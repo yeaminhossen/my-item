@@ -1,0 +1,74 @@
+/*----------------------------
+    Video Popup Styles  
+------------------------------*/
+
+.rn-project {
+    &-title {
+        margin-bottom: 0;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &-item {
+        margin: 0 7px;
+        &:hover {
+            & .rn-project-thumb {
+                &::before {
+                    opacity: .8;
+                }
+                & img {
+                    transform: scale(1.2);
+                }
+            & .rn-project-content {
+                opacity: 1;
+                visibility: visible;
+            }
+            }
+        }
+    }
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: .6s ease;
+        & b {
+            font-size: 15px;
+            font-weight: 500;
+          }
+    }
+    &-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+    &-thumb {
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #303030;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            overflow: hidden;
+            transition: .6s ease;
+            z-index: 2;
+        }
+        & img {
+            transform: scale(1);
+            transition: .6s ease;
+        }
+    }
+}
+.active-light-mode .rn-project-content h3 {
+    color: #fff;
+}
